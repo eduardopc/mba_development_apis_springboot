@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/index")
+@RequestMapping("/")
 public class Principal {
 
     @RequestMapping(method = RequestMethod.GET)
     public String helloWorld() {
-        return "Hello World!";
+        return "Olá, mundo!";
     }
 }
